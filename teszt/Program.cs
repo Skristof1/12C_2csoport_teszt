@@ -4,56 +4,75 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Korhenger
+namespace KörHenger
 {
-    class kor
+    class Kör
     {
-        private double sugar, kerulet, terulet;
+        protected double sugar,
+            terület,
+            kerület;
 
-        public kor() { }
+        public Kör() { }
 
-        public kor(double r)
+        public Kör(double r)
         {
             this.sugar = r;
-            this.kerulet = kalkerulet(r);
-            this.terulet = kalterulet(r);
         }
-
-        private double kalkerulet(double r)
-        {
-            return 2 * r * Math.PI
-        }
-
-        private double kalterulet(double r)
-        {
-            return Math.Pow(r, 2) * Math.PI;
-        }
-
-        public double GetSugar() { return this.sugar; }
-        public double GetKerulet() { return this.kerulet; }
-        public double GetTerulet() { return this.terulet; }
 
         public void SetSugar(double r)
-
-        private void setDatas(double r)
         {
             this.sugar = r;
-            this.kerulet = kalkerulet(r);
-            this.terulet = kalterulet(r);
         }
 
-
-
-
-        static void Main(string[] args)
+        public void SetTerület()
         {
-
-
-
-
-
-
-            Console.ReadKey();
+            this.terület = Math.Round(Math.Pow(this.sugar, 2) * Math.PI, 2);
         }
+
+        public void SetKerület()
+        {
+            this.kerület = Math.Round(2 * this.sugar * Math.PI, 2);
+        }
+
+        public double GetTerület()
+        {
+            return this.terület;
+        }
+
+        public double GetKerület()
+        {
+            return this.kerület;
+        }
+
+        public double GetSugár()
+        {
+            return this.sugar;
+        }
+    }
+
+    class Henger : Kör
+    {
+        // Osztályváltozók
+        private double térfogat,
+            magasság;
+
+        // Konstruktor
+        public Henger(double s, double m)
+        {
+            // Változók beállítása
+            this.sugar = s;
+            this.magasság = m;
+
+            // Számítások elvégzése
+            SetKerület();
+            SetTerület();
+            this.térfogat = this.terület * this.magasság;
+        }
+
+        public double GetTérfogat()
+        {
+            return this.térfogat;
+        }
+
     }
 }
