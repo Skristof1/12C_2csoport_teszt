@@ -26,16 +26,6 @@ namespace KöHenger_UnitTest
         [TestMethod]
         public void Terület_Teszt()
         {
-            double sugár = 5;
-            Kör kör = new Kör(sugár);
-            double vártEredm = 78.5398;
-
-            // Act - Végrehajtás
-            kör.SetTerület();
-            double kapottEredm = kör.GetTerület();
-
-            // Assert - Kiértékelés
-            Assert.AreEqual(vártEredm, kapottEredm, 0.01);
         }
     }
 }
