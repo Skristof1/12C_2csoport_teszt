@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using KörHenger;
+using koreshenger;
 
 namespace KöHenger_UnitTest
 {
@@ -26,22 +26,17 @@ namespace KöHenger_UnitTest
         [TestMethod]
         public void Terület_Teszt()
         {
+            // Arrange - Feltételek beállítása
             double sugár = 5;
-
             Kör kör = new Kör(sugár);
-
-            double vártEredm = 78.5398;
+            double vártEredm = 78.54;
 
             // Act - Végrehajtás
-
             kör.SetTerület();
-
             double kapottEredm = kör.GetTerület();
 
             // Assert - Kiértékelés
-
-            Assert.AreEqual(vártEredm, kapottEredm, 0.01);
-
+            Assert.AreEqual(vártEredm, kapottEredm);
         }
     }
 }
