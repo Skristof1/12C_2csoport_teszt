@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.34301.259
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teszt", "teszt\teszt.csproj", "{EA271110-DE18-4BFD-B3C4-6ACA73968CA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atvalt", "Atvalt\Atvalt.csproj", "{D2D44C47-36F7-45F2-95BA-FB0438A7FD89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atvalt_teszt", "Atvalt_teszt\Atvalt_teszt.csproj", "{F9D77E25-6DE1-4772-8B3C-512E97DFA881}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{EA271110-DE18-4BFD-B3C4-6ACA73968CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA271110-DE18-4BFD-B3C4-6ACA73968CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA271110-DE18-4BFD-B3C4-6ACA73968CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D44C47-36F7-45F2-95BA-FB0438A7FD89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D44C47-36F7-45F2-95BA-FB0438A7FD89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D44C47-36F7-45F2-95BA-FB0438A7FD89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D44C47-36F7-45F2-95BA-FB0438A7FD89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9D77E25-6DE1-4772-8B3C-512E97DFA881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9D77E25-6DE1-4772-8B3C-512E97DFA881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9D77E25-6DE1-4772-8B3C-512E97DFA881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9D77E25-6DE1-4772-8B3C-512E97DFA881}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
